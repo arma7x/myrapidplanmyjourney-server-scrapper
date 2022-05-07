@@ -15,7 +15,6 @@ return function (App $app) {
     });
 
     $app->group('/myrapid/api/v1', function (Group $group) {
-        $group->get('/list_service_msg', MyRapidV1\ListServiceMsg::class);
         $group->get('/list_service_status', MyRapidV1\ListServiceStatus::class);
         $group->get('/list_street_autocomplete', MyRapidV1\ListStreetAutocomplete::class);
         $group->get('/list_planner', MyRapidV1\ListPlanner::class);
